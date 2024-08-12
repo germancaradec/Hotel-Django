@@ -1,7 +1,7 @@
 # Hotel Furavery
 
 ## Descripción
-El proyecto Hotel Furavery es una aplicación web desarrollada en Django que permite gestionar consultas relacionadas con un hotel. La aplicación proporciona una interfaz para registrar, consultar, actualizar y eliminar registros de consultas.
+El proyecto Hotel Furavery es una aplicación web desarrollada en Django que permite gestionar el hotel. El primer paso fue desarrollar la api correspondiente al área de consultas. La aplicación proporciona una interfaz para registrar, consultar, actualizar y eliminar registros de consultas.
 
 ## Tecnología
 Este proyecto utiliza Django para gestionar la lógica de aplicación, la interacción con la base de datos, y la generación de respuestas HTTP.
@@ -9,11 +9,17 @@ Este proyecto utiliza Django para gestionar la lógica de aplicación, la intera
 El proyecto utiliza MySQL como sistema de gestión de bases de datos.
 
 Motor: django.db.backends.mysql
+
 Host: localhost
+
 Puerto: 3307
+
 Usuario: root
+
 Contraseña: (vacío en este caso)
+
 Nombre de la base de datos: hotel_furavery1
+
 Opciones: init_command con SET sql_mode='STRICT_TRANS_TABLES' para garantizar un modo de SQL estricto.
 
 ## Middleware y Seguridad
@@ -25,8 +31,11 @@ CSRF: El middleware csrf_exempt se usa en las vistas para deshabilitar la protec
 ## Vistas
 
 GET: Obtiene consultas específicas o todas las consultas.
+
 POST: Crea una nueva consulta a partir de los datos recibidos en la solicitud.
+
 PUT: Actualiza una consulta existente según el id proporcionado.
+
 DELETE: Elimina una consulta existente según el id proporcionado.
 
 ## Configuración Adicional
@@ -38,6 +47,7 @@ Validadores de Contraseña: Se utilizan validadores para garantizar la fortaleza
 
 Para configurar y ejecutar el proyecto localmente:
 Clona el repositorio:
+
 git clone https://github.com/germancaradec/Hotel-Furavery-Django.git
 
 Instala las dependencias:
