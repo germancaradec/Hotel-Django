@@ -4,11 +4,11 @@ services:
     env: python
     rootDir: django/hotel_furavery  
     buildCommand: "pip install -r requirements.txt"
-    preDeployCommand: "gunicorn hotel_furavery.wsgi:application --bind 0.0.0.0:8000"
+    preDeployCommand: "python manage.py migrate"
     envVars:
       - key: DATABASE_URL
         value: "postgresql://german:fhPHqaKIUX1LPCRhdbM4NIr8njhH2wwQ@dpg-csovu9i3esus73cdmf6g-a.oregon-postgres.render.com/postgres_render_db_2ahd"
       - key: DJANGO_SECRET_KEY
         value: 'django-insecure-_zled0+h*h5xscn@oghgk+@#r1pn$#@%3k=zi##pt=^u!!4z27'
-    startCommand: "python manage.py migrate"
+    startCommand: "gunicorn hotel_furavery.wsgi:application --bind 0.0.0.0:8000"
 
