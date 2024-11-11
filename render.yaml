@@ -5,5 +5,5 @@ services:
     rootDir: django/hotel_furavery  
     buildCommand: "pip install -r requirements.txt"
     preDeployCommand: "python manage.py migrate"
-    startCommand: "gunicorn hotel_furavery.wsgi:application --bind 0.0.0.0:8000"
+    startCommand: "python manage.py runserver"
 
