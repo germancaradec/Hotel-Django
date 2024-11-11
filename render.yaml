@@ -7,7 +7,7 @@ services:
     preDeployCommand: "gunicorn proyecto_django.wsgi:application --bind 0.0.0.0:8000"
     envVars:
       - key: DATABASE_URL
-        value: postgresql://german:fhPHqaKIUX1LPCRhdbM4NIr8njhH2wwQ@dpg-csovu9i3esus73cdmf6g-a/postgres_render_db_2ahd
+        value: postgresql://german:fhPHqaKIUX1LPCRhdbM4NIr8njhH2wwQ@dpg-csovu9i3esus73cdmf6g-a.oregon-postgres.render.com/postgres_render_db_2ahd
       - key: DJANGO_SECRET_KEY
         value: 'django-insecure-_zled0+h*h5xscn@oghgk+@#r1pn$#@%3k=zi##pt=^u!!4z27'
     startCommand: "python manage.py migrate"
