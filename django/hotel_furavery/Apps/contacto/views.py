@@ -58,5 +58,5 @@ class ConsultaView(View):
             Consulta.objects.filter(id=id).delete()
             datos = {'message': "Consulta eliminada correctamente"}
         else:
-            datos = {'message': "Consultas no encontradas..."}
+            datos = {'message': "Consulta no encontrada..."}
         return JsonResponse(datos)

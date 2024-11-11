@@ -63,6 +63,7 @@ Ejecuta las migraciones:
 python manage.py migrate
 
 Inicia el servidor de desarrollo:
+cd django/hotel_furavery
 python manage.py runserver
 
 Accede a la aplicación en http://127.0.0.1:8000/.
