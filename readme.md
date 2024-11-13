@@ -46,7 +46,7 @@ Validadores de Contraseña: Se utilizan validadores para garantizar la fortaleza
 ## Instalación y Configuración
 
 Para configurar y ejecutar el proyecto localmente:
-Clona el repositorio:
+Clona la rama local del repositorio:
 
 git clone --branch local --single-branch https://github.com/germancaradec/Hotel-Furavery-Django.git
 
